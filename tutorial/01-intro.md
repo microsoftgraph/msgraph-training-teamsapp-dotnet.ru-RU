@@ -1,25 +1,22 @@
 <!-- markdownlint-disable MD002 MD041 -->
 
-В этом руководстве рассказывается, как создать приложение Microsoft Teams с помощью ASP.NET Core и API Microsoft Graph для получения сведений календаря для пользователя.
+В этом руководстве рассказывается о создании приложения Microsoft Teams с помощью ASP.NET Core и API microsoft Graph для получения сведений о календаре для пользователя.
 
 > [!TIP]
-> Если вы предпочитаете просто скачать завершенный учебник, вы можете скачать или клонировать [репозиторий GitHub.](https://github.com/microsoftgraph/msgraph-training-teamsapp-dotnet) Инструкции по настройке  приложения с помощью ИД и секрета приложения см. в файле README в папке демонстрации.
+> Если вы предпочитаете просто скачать завершенный учебник, вы можете скачать или клонировать [GitHub репозиторий](https://github.com/microsoftgraph/msgraph-training-teamsapp-dotnet). Инструкции по настройке  приложения с помощью ID-приложения и секрета см. в файле README в демо-папке.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные требования
 
-Прежде чем приступить к этому учебнику, на компьютере разработчика должны быть установлены следующие следующую установку.
+Перед началом этого учебного пособия на компьютере разработки должно быть установлено следующее.
 
-- [.NET Core SDK](https://dotnet.microsoft.com/download).
+- [.NET SDK](https://dotnet.microsoft.com/download).
 - [ngrok](https://ngrok.com/)
 
-У вас также должна быть личная учетная запись Майкрософт с почтовым Outlook.com или учетная запись Майкрософт для работы или учебного заведения. Если у вас нет учетной записи Майкрософт, существует несколько вариантов получения бесплатной учетной записи:
-
-- Вы можете [зарегистрироваться для новой личной учетной записи Майкрософт.](https://signup.live.com/signup?wa=wsignin1.0&rpsnv=12&ct=1454618383&rver=6.4.6456.0&wp=MBI_SSL_SHARED&wreply=https://mail.live.com/default.aspx&id=64855&cbcxt=mai&bk=1454618383&uiflavor=web&uaid=b213a65b4fdc484382b6622b3ecaa547&mkt=E-US&lc=1033&lic=1)
-- Вы можете зарегистрироваться в программе для разработчиков [Office 365,](https://developer.microsoft.com/office/dev-program) чтобы получить бесплатную подписку на Office 365.
+Вы также должны иметь учетную запись Microsoft work или school в клиенте Microsoft 365, которая включила настраиваемую Teams [загрузку приложения.](/microsoftteams/platform/concepts/build-and-test/prepare-your-o365-tenant#enable-custom-teams-apps-and-turn-on-custom-app-uploading) Если у вас нет учетной записи Microsoft work или school, или ваша организация не [](https://developer.microsoft.com/office/dev-program) включила настраиваемую Teams загрузку приложений, вы можете зарегистрироваться в программе разработчика Microsoft 365, чтобы получить бесплатную подписку Office 365 разработчика.
 
 > [!NOTE]
-> Это руководство было написано с помощью .NET Core SDK версии 3.1.402. Действия в этом руководстве могут работать с другими версиями, но не были протестированы.
+> Этот учебник был написан с помощью версии .NET SDK версии 5.0.302. Действия в этом руководстве могут работать с другими версиями, но они не были проверены.
 
 ## <a name="feedback"></a>Отзывы
 
-Поделитесь с этим учебником отзывами в [репозитории GitHub.](https://github.com/microsoftgraph/msgraph-training-teamsapp-dotnet)
+В репозитории [](https://github.com/microsoftgraph/msgraph-training-teamsapp-dotnet)GitHub.
